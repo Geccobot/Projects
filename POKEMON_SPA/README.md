@@ -8,7 +8,8 @@ Welcome to my **Pokédex Single Page Application**, built using HTML, CSS, and J
 
 ## Preview
 
-![Pokédex Screenshot](banner-image-url.jpg)
+![Pokédex Screenshot]()(https://github.com/user-attachments/assets/4e8a5d1e-4683-4346-b715-4c915f8d36cd)
+
 
 ---
 
