@@ -4,7 +4,7 @@ Welcome to my **Pokédex Single Page Application**, built using HTML, CSS, and J
 
 ## Live Demo
 
-[ View the Live Project Here](https://your-deployment-url.com)
+[ View the Live Project Here](https://geccobot.github.io/Projects/)
 
 ## Preview
 
