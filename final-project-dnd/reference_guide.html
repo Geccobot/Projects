@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference Guide</title>
+  <link rel="icon" type="image/x-icon" href="assets/dnd_logo.png.png">
+  <link rel="stylesheet" href="reference_guideStyle.css">
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="charactersheet.html">Character Sheet</a>
+    <a href="diceroller.html">Dice Roller</a>
+  </nav>
+</header>
+<div class="page-wrapper">
+<main class="main-content">
+  <div id = "intro">
+    <img src="Assets/dnd_logo.png.png" alt="D&D Logo" class="logo" />
+    <h1>Welcome to the Reference Guide</h1>
+    <p>This guide provides essential details about monsters, spells, and weapons in Dungeons & Dragons 5th Edition.</p>
+    </div>
+    <main class="main-content">
+      <section id="reference-guide">
+        <div class="category-selector">
+          <button data-category="monsters">Monsters</button>
+          <button data-category="spells">Spells</button>
+          <button data-category="weapons">Weapons</button>
+        </div>
+        <div class="search-container">
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="monsters">Monsters</option>
+            <option value="spells">Spells</option>
+            <option value="weapons">Weapons</option>
+          </select>
+          <input type="text" id="search-input" placeholder="Search for an item..." />
+          <button id="search-btn">Search</button>
+        </div>
+        <div class="content-area">
+          <ul id="item-list" class="item-list"></ul>
+          <div id="info-card" class="info-card">
+            <h3 id="info-card-title"></h3>
+            <p><strong>Type:</strong> <span id="info-card-type"></span></p>
+            <p><strong>Description:</strong><br><span id="info-card-description"></span></p>
+            <div class="card-buttons">
+              <button id="prevBtn" disabled>Previous</button>
+              <button id="nextBtn">Next</button>
+              <button id="backBtn">Back</button>
+            </div>
+          </div>
+           
+        
+      </section>
+    </main>
+    
+</main>
+</div>
+    <footer>
+    <p>This project was created by the following contributors:</p>
+    <ul>
+      <li>Austin Nance</li>
+      <li>Matthew Long</li>
+      <li>Terrell Smith</li>
+      <li>Demond Balentine</li>
+    </ul>
+    </footer>
+    <script src="reference_guideScript.js" defer></script>
+</body>
+</html>

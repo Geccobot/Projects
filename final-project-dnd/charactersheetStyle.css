@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Georgia', serif;
+    background-color: transparent;
+    color: #f0f0f0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('Assets/dnd_art2.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+.navbar {
+    background-color: #990000;
+    padding: 10px 0;
+    text-align: center;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.logo-container {
+    background-color: #3a3a3a;
+    padding: 10px 0;
+  }
+  .logo {
+    max-width: 200px;
+    height: auto;
+  }
+.page-wrapper {
+    background-color: #3a3a3a;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: calc(100% - 200px);
+    max-width: 1600px;
+}
+@media (max-width: 600px) {
+    .page-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.character-sheet {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.section {
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 25px 30px;
+    background-color: #3a3a3a;
+}
+.section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.basic-info div,
+.combat-grid div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.basic-info label,
+.combat-grid label {
+    flex: 0 0 30%;
+    text-align: left;
+    padding-right: 10px;
+}
+.basic-info input,
+.basic-info select,
+.combat-grid input,
+.combat-grid select,
+textarea {
+    flex: 1;
+    max-width: 60%;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #f0f0f0; 
+}
+button {
+    background-color: #990000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    max-width: 100%;
+}
+.scores-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+.score-box {
+    text-align: center;
+    background: #444;
+    padding: 10px;
+    border-radius: 8px;
+}
+.score-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+footer {
+    background-color: #990000;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+    text-align: center;
+}

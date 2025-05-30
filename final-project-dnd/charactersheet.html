@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Creator</title>
+    <link rel="icon" type="image/x-icon" href="assets/dnd_logo.png.png">
+    <link rel="stylesheet" href="charactersheetStyle.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="reference_guide.html">References</a>
+            <a href="diceroller.html">Dice Roller</a>
+        </nav>
+    </header>
+    <div class="page-wrapper">
+        <div class="logo-container">
+            <img src="Assets/dnd_logo.png.png" alt="D&D Logo" class="logo" />
+        </div>
+        <main class="character-sheet">
+            <section class="section basic-info">
+                <div>
+                    <label for="character-name">Name:</label>
+                    <input type="text" id="character-name" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="character-class">Class:</label>
+                    <select id="character-class">
+                        <option value="">Select Class</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="character-race">Race:</label>
+                    <select id="character-race">
+                        <option value="">Select Race</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="character-alignment">Alignment:</label>
+                    <select id="character-alignment">
+                        <option value="">Select Alignment</option>
+                        <option value="Lawful Good">Lawful Good</option>
+                        <option value="Neutral Good">Neutral Good</option>
+                        <option value="Chaotic Good">Chaotic Good</option>
+                        <option value="Lawful Neutral">Lawful Neutral</option>
+                        <option value="True Neutral">True Neutral</option>
+                        <option value="Chaotic Neutral">Chaotic Neutral</option>
+                        <option value="Lawful Evil">Lawful Evil</option>
+                        <option value="Neutral Evil">Neutral Evil</option>
+                        <option value="Chaotic Evil">Chaotic Evil</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="character-background">Background:</label>
+                    <input type="text" id="character-background" placeholder="Enter your background">
+                </div>
+                <button id="randomize-button" type="button">Randomize Character</button>
+            </section>
+            <section class="section ability-scores">
+                <h2>Ability Scores</h2>
+                <div class="scores-grid">
+                    <div class="score-box"><label>STR</label><input type="number" id="str" readonly /></div>
+                    <div class="score-box"><label>DEX</label><input type="number" id="dex" readonly /></div>
+                    <div class="score-box"><label>CON</label><input type="number" id="con" readonly /></div>
+                    <div class="score-box"><label>INT</label><input type="number" id="int" readonly /></div>
+                    <div class="score-box"><label>WIS</label><input type="number" id="wis" readonly /></div>
+                    <div class="score-box"><label>CHA</label><input type="number" id="cha" readonly /></div>
+                </div>
+            </section>
+            <section class="section combat-stats">
+                <h2>Combat Stats</h2>
+                <div class="combat-grid">
+                    <div><label>AC:</label><input type="number" id="armor-class" readonly /></div>
+                    <div><label>Initiative:</label><input type="number" id="initiative" readonly /></div>
+                    <div><label>Speed:</label><input type="number" id="speed" readonly /> ft</div>
+                    <div><label>HP:</label><input type="number" id="hit-points" readonly /></div>
+                    <div><label>Hit Dice:</label><input type="text" id="hit-dice" readonly /></div>
+                </div>
+            </section>
+            <section class="section equipment">
+                <h2>Equipment</h2>
+                <textarea id="equipment" readonly></textarea>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>This project was created by the following contributors:</p>
+        <ul>
+            <li>Austin Nance</li>
+            <li>Matthew Long</li>
+            <li>Terrell Smith</li>
+            <li>Demond Balentine</li>
+        </ul>
+    </footer>
+
+    <script src="charactersheetScript.js"></script>
+</body>
+</html>
