@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokédex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <main class="app-container">
+    <section id="pokemon-list" class="sidebar">
+      <h2>Character Database</h2>
+      <ul id="list-container">
+      </ul>
+    </section>
+    <section id="pokemon-detail" class="details hidden">
+      <h2 id="pokemon-name">[Character Name]</h2>
+      <div class="image-container">
+        <img id="pokemon-image" src="" alt="Character Image">
+      </div>
+      <div class="info">
+        <p id="pokemon-id"> </p>
+        <p><strong>Type:</strong> <span id="pokemon-type"></span></p>
+      </div>
+      <div class="nav-buttons">
+        <button id="back-btn">Back</button>
+        <button id="prev-btn">Prev</button>
+        <button id="next-btn">Next</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
